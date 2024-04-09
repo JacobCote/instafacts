@@ -16,6 +16,7 @@ python3 insta_bot.py
 #remove temp files
 rm thumbnail.jpg
 rm test.mp4
+rm text.txt
 rm test2.mp4
 rm speech.mp3
 
