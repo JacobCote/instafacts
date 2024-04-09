@@ -1,7 +1,15 @@
 #!/bin/bash
 
-# Run the python script
-source /Users/jacobcote/3.9venv/bin/activate 
+if [ ! -d ./venv ]; then
+  echo "Creating virtual environment..."
+  python -m venv venv
+  source /Users/jacobcote/venv/bin/activate 
+  pip install -r requirements.txt
+fi
+if [ ! -d ./venv ]; then
+  source /Users/jacobcote/venv/bin/activate 
+fi
+
 
 # Run the python script
 python3 test.py
